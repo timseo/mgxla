@@ -45,17 +45,17 @@ Table of contents
     Reset
 ====================================== */
 html { font-size: 15px; }
-body{ font-family: 'Dosis', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:1.15rem; color:#6f6f6f; font-weight: 400;line-height: 24px;}
+body{ font-family: 'Dosis', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:1.25rem; color:#6f6f6f; font-weight: 400;line-height: 24px;}
 body, html { height: 100%; -moz-osx-font-smoothing: grayscale;}
-a, a:active, a:focus { color: #6f6f6f; text-decoration: none; }
+a, a:active, a:focus { color: #fff; text-decoration: none; }
 a:hover, a:active{color: #ff6565; text-decoration: none;}
 a:focus, a:active, button:focus, button:active,.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none; box-shadow: none; }
 img {max-width:100%; height:auto; }
 video { background-size: cover; display: table-cell; vertical-align: middle; width: 100%; }
 input, textarea, select{ border: 1px solid #d1d1d1; font-size: 14px;  padding: 8px 15px; width: 100%; margin: 0 0 20px 0; max-width: 100%; resize: none; color: inherit;}
 input[type="submit"] { width: auto}
-input[type="button"], input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"] { -webkit-appearance: none; outline: none; }
-input:focus, textarea:focus{ border-color: #585858 !important; outline: none; }
+input[type="button"], input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"] { -webkit-appearance: none; outline: none; color: #fff; }
+input:focus, textarea:focus{ border-color: #fff !important; outline: none; color: #fff; }
 input[type="button"]:focus, input:focus, textarea:focus, select:focus, .form-control:focus, .btn.focus, .btn:focus{ outline: none; box-shadow: none; }
 select::-ms-expand{ display:none;}
 iframe { border: 0;}
@@ -68,7 +68,10 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
 *:hover{transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -ms-transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; }
 ::selection { color: #000; background:#dbdbdb; }
 ::-moz-selection { color:#000; background:#dbdbdb; }
-::-webkit-input-placeholder { color: #6f6f6f; text-overflow: ellipsis;}
+::-webkit-input-placeholder {
+  letter-spacing: 0.15rem;
+  color: #fff;
+  text-overflow: ellipsis;}
 ::-moz-placeholder { color: #6f6f6f; text-overflow: ellipsis; opacity:1;}
 :-ms-input-placeholder { color: #6f6f6f; text-overflow: ellipsis; opacity:1;}
 
@@ -91,11 +94,11 @@ h6 {font-size:25px; line-height:30px}
 
 /* text size */
 .text-extra-small {font-size:11px; line-height:14px}
-.text-small {font-size:12px; line-height:20px}
+.text-small {font-size:1.15rem; line-height:20px}
 .text-medium {font-size:16px; line-height:23px}
 .text-large {font-size:18px; line-height:26px}
 .text-extra-large {font-size: 20px; line-height:26px}
-.title-large {font-size: 100px; line-height:95px}
+.title-large {font-size: 3.25rem; letter-spacing: 0.25rem; line-height:95px; text-transform: uppercase;}
 .title-extra-large {font-size: 130px; line-height:120px}
 
 /* text color */
@@ -284,7 +287,16 @@ label { margin-bottom: 5px; font-weight: 700; }
 .col-4-nth .col-sm-3:nth-child(4n+1) {clear: left;}
 
 /* input */
-.input-border-bottom {background: transparent; border: 0; border-bottom: 1px solid #484848; padding: 10px 0; margin-bottom: 30px; font-size: 14px; border-radius: 0; }
+.input-border-bottom {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ff6564;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  font-size: 1.25rem;
+  border-radius: 0;
+  color: #fff;
+}
 .input-border-bottom:focus{background: transparent; border: 0; border-bottom: 1px solid #929292; }
 .input-border-bottom::-webkit-input-placeholder {font-weight: 300; font-size: 14px; }
 .input-border-bottom::-moz-placeholder {font-weight: 300; font-size: 14px;}
